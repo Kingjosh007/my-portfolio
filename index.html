@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     <!-- Link to css style file -->
     <link rel="stylesheet" href="style.css">
 
@@ -19,20 +18,29 @@
 
 <body>
 
-    <header>
-        <div class="logo">
+    <header class="portfolio-header">
+        <div class="header-logo">
             <div class="logo-text">KJC</div>
         </div>
-        <div class="hamburger-menu"></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"><span></span></div>
+        </div>
     </header>
-    <main>
-        <div class="name">King Josaphat Chewa</div>
+    <main class="main-section">
+        <img src="assets/svg/big_ellipse.svg" alt="Big ellipse with gradient background" id="big-ellipse">
+        <div class="name">K. J. Chewa</div>
         <div class="job-title">Software Developer</div>
-        <div class="description">I can help you build a product , feature or website Look through some of my work and
-            experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</div>
+        <div class="description">
+            <p>I can help you build a product, feature or website. <br>  Look through some of my work and
+            experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p></div>
     </main>
-    <hr>
-    <footer>
+    <div class="hr-image-container">
+        <img src="assets/svg/hr.svg" alt="Line separing the main content from the footer">
+    </div>
+
+
+     <footer>
+         <img src="assets/svg/small_ellipse.svg" alt="Small ellipse with gradient background" id="small-ellipse">
         <div class="footer-section">
             <div class="fs-title">Language</div>
             <div class="fs-list">
@@ -68,7 +76,12 @@
                 </ul>
             </div>
         </div>
+        <div class="hr-image-container">
+            <img src="assets/svg/hr.svg" alt="Line separing the main content from the footer">
+        </div>
     </footer>
+
+    
 </body>
 
 </html>
