@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+There is no live demo available for this project. I provided a screenshot instead.
 
 
 ## Author
