@@ -71,7 +71,7 @@ body {
 
 #small-ellipse {
   position: absolute;
-  right: -5px;
+  right: -5.2px;
   bottom: 2em;
 }
 
@@ -165,10 +165,6 @@ footer {
 ul li {
   list-style-type: none;
   margin: 12px;
-}
-
-image {
-  position: absolute;
 }
 
 .hr-image-container {
