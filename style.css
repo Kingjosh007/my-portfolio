@@ -23,8 +23,10 @@
 body {
   background-color: var(--color-defaut-background);
   color: var(--color-primary-4);
-  margin: 12px;
   font-family: Roboto, Arial, sans-serif;
+  background-image: url("assets/svg/big_ellipse.svg"), url("assets/svg/small_ellipse.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
 }
 
 /* Hamburger Icon */
@@ -61,20 +63,6 @@ body {
   top: 9px;
 }
 
-/* Ellipses */
-
-#big-ellipse {
-  position: absolute;
-  left: -5px;
-  top: 1em;
-}
-
-#small-ellipse {
-  position: absolute;
-  right: -5px;
-  bottom: 2em;
-}
-
 /* Header */
 
 .portfolio-header {
@@ -85,7 +73,8 @@ body {
   margin-left: 24px;
 }
 
-.header-logo .logo-text {
+.portfolio-header a {
+  text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   color: var(--color-neutral-11);
@@ -115,17 +104,18 @@ body {
 .main-section .job-title {
   font-size: 32px;
   font-weight: 500;
+  margin-top: -1.2em;
   color: var(--color-primary-4);
 }
 
 .main-section .description {
   font-weight: 400;
   font-size: 20px;
-  text-align: center;
+  text-align: justify;
   font-style: normal;
   line-height: 28px;
   color: var(--color-neutral-7);
-  margin-top: 1em;
+  margin-top: 0.4em;
 }
 
 /* Footer */
@@ -165,10 +155,6 @@ footer {
 ul li {
   list-style-type: none;
   margin: 12px;
-}
-
-image {
-  position: absolute;
 }
 
 .hr-image-container {
