@@ -6,6 +6,7 @@
   --color-primary-3: #9490ff;
   --color-primary-4: #edecff;
   --color-neutral-2: #2a2b33;
+  --color-neutral-6: #a2a3ae;
   --color-neutral-7: #c8c8d4;
   --color-neutral-10: #f5f5ff;
   --color-neutral-11: #fff;
@@ -26,6 +27,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
   background-image: url("assets/svg/big_ellipse.svg"), url("assets/svg/small_ellipse.svg");
   background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
   background-position: left top, right bottom;
 }
 
@@ -120,20 +122,20 @@ body {
 
 /* Footer */
 
-footer {
+.technical-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2.2em;
 }
 
-.footer-section {
+.ts-section {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.footer-section .fs-title {
+.ts-section .ts-title {
   font-weight: 500;
   font-size: 12px;
   color: var(--color-primary-3);
@@ -143,7 +145,7 @@ footer {
   padding-left: 12px;
 }
 
-.footer-section .fs-list ul {
+.ts-section .ts-list ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -154,6 +156,9 @@ footer {
 /* Lists */
 ul li {
   list-style-type: none;
+}
+
+.ts-list ul li {
   margin: 12px;
 }
 
@@ -161,4 +166,117 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Icons */
+
+.icons {
+  margin: 4em auto 3em auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.arrow-icon {
+  font-size: 30px;
+  color: #c4c4c4;
+}
+
+/* work-arrow div */
+
+.work-arrow {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 4em;
+}
+
+.work-arrow div {
+  color: var(--color-neutral-6);
+  font-size: 20px;
+}
+
+/* recent-work section */
+
+.recent-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.recent-work .section-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--color-primary-3);
+  margin-bottom: 5px;
+}
+
+/* projects-container div */
+
+.projects-container {
+  display: grid;
+  justify-items: center;
+  margin-inline: 30px;
+  gap: 3em;
+  margin-bottom: 5em;
+}
+
+.project .screenshot-container img {
+  width: 100%;
+  height: auto;
+}
+
+.project .project-title {
+  font-size: 32px;
+  color: var(--color-neutral-11);
+  line-height: 44%;
+}
+
+.project .project-description {
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 2em;
+  font-weight: 200;
+  text-align: left;
+}
+
+.project .technologies-used {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Inter', sans-serif;
+  margin-top: 2em;
+  font-weight: 200;
+  gap: 10px;
+}
+
+.project .projectDetailsBtn {
+  border: none;
+  width: 89px;
+  height: 48px;
+  background-color: var(--color-primary-2);
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: var(--color-primary-4);
+  cursor: pointer;
+}
+
+.projectDetailsBtn:hover {
+  background-color: var(--color-primary-2);
+  color: var(--color-neutral-11);
+}
+
+.projectDetailsBtn:active {
+  background-color: var(--color-primary-1);
+}
+
+.projectDetailsBtn:focus {
+  background-color: var(--color-primary-1);
+}
+
+.projectDetailsBtn:disabled {
+  background-color: var(--color-neutral-2);
 }
