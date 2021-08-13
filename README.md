@@ -20,7 +20,11 @@ This project was divided into 10 parts before getting to the full portfolio webs
 10. Use local storage to save form data
 
 
-![screenshot](./app_screenshot.png)
+## Screenshots
+
+![screenshot1](./screenshots/screenshot1.PNG) ![screenshot1](./screenshots/screenshot2.PNG) 
+![screenshot1](./screenshots/screenshot3.PNG) ![screenshot1](./screenshots/screenshot4.PNG) 
+![screenshot1](./screenshots/screenshot5.PNG) ![screenshot1](./screenshots/screenshot6.PNG) ![screenshot1](./screenshots/screenshot7.PNG) 
 
 
 ## Built With
