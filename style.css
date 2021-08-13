@@ -258,3 +258,15 @@ ul li {
   letter-spacing: 3%;
   color: var(--color-primary-4);
 }
+
+.projectDetailsBtn:hover {
+  background-color: var(--color-primary-2);
+}
+
+.projectDetailsBtn:focus {
+  background-color: var(--color-primary-1);
+}
+
+.projectDetailsBtn:disabled {
+  background-color: var(--color-neutral-2);
+}
