@@ -6,7 +6,7 @@
 
 > I was supposed to build a UI that is as close as possible to this Figma design: [Figma Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10) 
 
-This project was divided into 10 parts before getting to the full portfolio website. Each part corresponds to a specific branch. The 10 parts are listed below. The one in bold is the one I am working on. Refer to the corresponding branch.
+This project was divided into 10 parts before getting to the full portfolio website. Each part corresponds to a specific branch. The 10 parts are listed below. The one in bold is the one I am currently working on. Refer to the corresponding branch.
 
 1. Setup and mobile version skeleton
 2. **List of previous projects + About myself (mobile)**

@@ -26,6 +26,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
   background-image: url("assets/svg/big_ellipse.svg"), url("assets/svg/small_ellipse.svg");
   background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
   background-position: left top, right bottom;
 }
 
@@ -120,20 +121,20 @@ body {
 
 /* Footer */
 
-footer {
+.technical-skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2.2em;
 }
 
-.footer-section {
+.ts-section {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-.footer-section .fs-title {
+.ts-section .ts-title {
   font-weight: 500;
   font-size: 12px;
   color: var(--color-primary-3);
@@ -143,7 +144,7 @@ footer {
   padding-left: 12px;
 }
 
-.footer-section .fs-list ul {
+.ts-section .ts-list ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -162,3 +163,4 @@ ul li {
   justify-content: center;
   align-items: center;
 }
+
