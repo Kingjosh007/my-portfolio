@@ -317,12 +317,14 @@ ul li {
   height: 48px;
 }
 
-#contact-form input[name="name"], #contact-form input[name="email"], #contact-form textarea {
-  color: rgba(25,23,101,1);
+#contact-form input[name="name"],
+#contact-form input[name="email"],
+#contact-form textarea {
+  color: rgba(25, 23, 101, 1);
   font-size: 15px;
   font-family: 'Inter', serif;
   font-weight: 400;
- }
+}
 
 #contact-form textarea {
   width: 327px;
@@ -358,3 +360,26 @@ ul li {
   background-color: var(--color-neutral-2);
 }
 
+#main-footer-hr {
+  margin-top: 3em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .footer-icons {
+  margin: 1em auto 0.7em auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-email {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
