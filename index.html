@@ -230,9 +230,9 @@
             </p>
             <div class="form-container">
             <form action="/action.php" method="post" id="contact-form">
-                <input name="name" type="text" placeholder="Your name" required>
+                <input name="name" type="text" placeholder="Your name" maxlength="30" required>
                 <input name="email" type="email" placeholder="Your email address" required>
-                <textarea cols="100" name="comments" rows="5" placeholder="Your message" required></textarea>
+                <textarea name="message" placeholder="Your message" maxlength="500" required></textarea>
                 <button type="submit">Get In Touch</button>
             </form>            
             </div>
