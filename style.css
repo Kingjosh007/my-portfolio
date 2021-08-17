@@ -280,3 +280,106 @@ ul li {
 .projectDetailsBtn:disabled {
   background-color: var(--color-neutral-2);
 }
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-inline: 24px;
+}
+
+.contact-us .section-title {
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: rgba(147, 144, 255, 1);
+}
+
+.contact-us .contact-form-intro {
+  color: var(--color-neutral-10);
+  font-size: 16px;
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+  gap: 24px;
+  align-items: center;
+}
+
+#contact-form input {
+  width: 327px;
+  height: 48px;
+}
+
+#contact-form input[name="name"],
+#contact-form input[name="email"],
+#contact-form textarea {
+  color: rgba(25, 23, 101, 1);
+  font-size: 15px;
+  font-family: 'Inter', serif;
+  font-weight: 400;
+}
+
+#contact-form textarea {
+  width: 327px;
+  height: 148px;
+}
+
+#contact-form button {
+  border: none;
+  width: 89px;
+  height: 48px;
+  background-color: var(--color-primary-2);
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  color: var(--color-primary-4);
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: var(--color-primary-2);
+  color: var(--color-neutral-11);
+}
+
+#contact-form button:active {
+  background-color: var(--color-primary-1);
+}
+
+#contact-form button:focus {
+  background-color: var(--color-primary-1);
+}
+
+#contact-form button:disabled {
+  background-color: var(--color-neutral-2);
+}
+
+#main-footer-hr {
+  margin-top: 3em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .footer-icons {
+  margin: 1em auto 0.7em auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .footer-email {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
