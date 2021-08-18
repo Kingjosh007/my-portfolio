@@ -24,13 +24,24 @@
 <body>
 
     <header class="portfolio-header">
-        <a href="#">KJC</a>
+        <a href="#" class="logo">KJC</a>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><li><a href="#about">About</a></li></li>
+                <li><li><a href="#contact-form">Portfolio</a></li></li>
+                <li><div class="envelop">
+                        <div class="arrow-down">
+                        </div>
+                </div></li>
+            </ul>
+        </nav>
         <div class="hamburger-menu">
             <div class="hamburger-icon"><span></span></div>
         </div>
     </header>
     <main>
-        <section class="main-section">
+        <section class="main-section" id="about-me">
             <h1 class="name">King J. Chewa</h1>
             <h3 class="job-title">Software Developer</h3>
             <p class="description">
@@ -106,7 +117,7 @@
             <div>Work</div>
         </div>
 
-        <section class="recent-work">
+        <section class="recent-work" id="portfolio">
             <h2 class="section-title">MY RECENT WORK</h2>
             <div class="hr-image-container">
                 <img src="assets/svg/hr.svg"
@@ -222,7 +233,7 @@
             </div>
         </section>
 
-        <section class="contact-us">
+        <section class="contact-us" id="contact-form">
             <h2 class="section-title">CONTACT US</h2>
             <p class="contact-form-intro">
                 If you have an application you are interested in developing, a feature that you need built or a project

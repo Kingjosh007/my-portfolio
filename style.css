@@ -70,16 +70,27 @@ body {
 .portfolio-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 1em;
+  align-items: center;
+  margin-top: 26px;
   margin-bottom: 60px;
   margin-left: 24px;
 }
 
-.portfolio-header a {
+.portfolio-header .desktop-nav {
+  display: none;
+}
+
+.portfolio-header .logo {
   text-decoration: none;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 18px;
+  line-height: 20px;
   color: var(--color-neutral-11);
+}
+
+.portfolio-header a {
+  text-decoration: none;
 }
 
 /* Main Section */
@@ -382,4 +393,69 @@ footer .footer-email {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
+}
+
+/* ------------------------------------------
+  Media Queries
+-------------------------------------------- */
+
+@media only screen and (min-width: 1025px) {   /* desktops, large screens */
+  .hamburger-menu {
+    display: none;
+  }
+
+  .portfolio-header {
+    margin-left: 154px;
+  }
+
+  .portfolio-header .desktop-nav {
+    display: block;
+    margin-right: 2em;
+  }
+
+  .desktop-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .desktop-nav a {
+    text-decoration: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--color-neutral-11);
+  }
+
+  .envelop {
+    width: 22px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #e5e5e5;
+    cursor: pointer;
+  }
+
+  .envelop .arrow-down,
+  .envelop .arrow-down::before {
+    display: block;
+    box-sizing: border-box;
+    border-right: 2px solid transparent;
+  }
+
+  .envelop .arrow-down {
+    position: relative;
+    left: 2px;
+    top: -8px;
+  }
+
+  .envelop .arrow-down::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid #e5e5e5;
+    border-top: 2px solid #e5e5e5;
+    border-bottom: 5px solid transparent;
+    transform: rotate(-135deg);
+  }
 }
