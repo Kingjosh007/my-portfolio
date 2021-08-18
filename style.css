@@ -21,11 +21,20 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-defaut-background);
   color: var(--color-primary-4);
-  font-family: Roboto, Arial, sans-serif;
-  background-image: url("assets/svg/big_ellipse.svg"), url("assets/svg/small_ellipse.svg");
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+main {
+  background-image:
+    url("assets/svg/big_ellipse.svg"),
+    url("assets/svg/small_ellipse.svg");
   background-repeat: no-repeat, no-repeat;
   background-attachment: scroll, scroll;
   background-position: left top, right bottom;
@@ -53,7 +62,7 @@ body {
 
 .hamburger-icon span::before,
 .hamburger-icon span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -82,7 +91,7 @@ body {
 
 .portfolio-header .logo {
   text-decoration: none;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 20px;
@@ -112,6 +121,10 @@ body {
   font-weight: 700;
   text-align: center;
   color: var(--color-primary-2);
+}
+
+.main-section .desktop-name {
+  display: none;
 }
 
 .main-section .job-title {
@@ -181,6 +194,10 @@ ul li {
 
 /* Icons */
 
+#work-arrow1 {
+  display: none;
+}
+
 .icons {
   margin: 4em auto 3em auto;
   display: flex;
@@ -202,9 +219,12 @@ ul li {
   margin-bottom: 4em;
 }
 
-.work-arrow div {
+.work-arrow span {
   color: var(--color-neutral-6);
   font-size: 20px;
+  display: block;
+  margin-top: -1.6em;
+  margin-left: 2em;
 }
 
 /* recent-work section */
@@ -248,7 +268,7 @@ ul li {
 .project .project-description {
   font-size: 20px;
   line-height: 28px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 2em;
   font-weight: 200;
   text-align: left;
@@ -257,7 +277,7 @@ ul li {
 .project .technologies-used {
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin-top: 2em;
   font-weight: 200;
   gap: 10px;
@@ -302,7 +322,7 @@ ul li {
 
 .contact-us .section-title {
   font-size: 32px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: rgba(147, 144, 255, 1);
 }
@@ -310,7 +330,7 @@ ul li {
 .contact-us .contact-form-intro {
   color: var(--color-neutral-10);
   font-size: 16px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-weight: 400;
   margin-bottom: 40px;
 }
@@ -333,7 +353,7 @@ ul li {
 #contact-form textarea {
   color: rgba(25, 23, 101, 1);
   font-size: 15px;
-  font-family: 'Inter', serif;
+  font-family: "Inter", serif;
   font-weight: 400;
 }
 
@@ -389,7 +409,7 @@ footer .footer-icons {
 }
 
 footer .footer-email {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -399,29 +419,42 @@ footer .footer-email {
   Media Queries
 -------------------------------------------- */
 
-@media only screen and (min-width: 1025px) {   /* desktops, large screens */
+@media only screen and (min-width: 1025px) {
+  /* desktops, large screens */
+
+  /* Desktop background image */
+  main {
+    background-image:
+      url("assets/svg/desktop/ellipe-top-left.svg"),
+      url("assets/svg/desktop/ellipe-bottom-right.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, scroll;
+    background-position: 24px 50px, 100% 300px;
+  }
+
+  /* Desktop header */
   .hamburger-menu {
     display: none;
   }
 
   .portfolio-header {
     margin-left: 154px;
+    margin-right: 70px;
   }
 
   .portfolio-header .desktop-nav {
     display: block;
-    margin-right: 2em;
   }
 
   .desktop-nav ul {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 25px;
   }
 
   .desktop-nav a {
     text-decoration: none;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
@@ -457,5 +490,134 @@ footer .footer-email {
     border-top: 2px solid #e5e5e5;
     border-bottom: 5px solid transparent;
     transform: rotate(-135deg);
+  }
+
+  /* Desktop name container */
+
+  .main-section .desktop-name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 142px;
+  }
+
+  .desktop-name-container .name {
+    display: none;
+  }
+
+  .desktop-name-container .desktop-name {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-size: 76px;
+    font-weight: 700;
+    text-align: center;
+    color: #9390ff;
+  }
+
+  .desktop-name-container .job-title {
+    font-size: 40px;
+    line-height: 46.88px;
+    font-weight: 500;
+    margin-top: -1.2em;
+    color: var(--color-primary-4);
+  }
+
+  /* Desktop description container */
+
+  .main-section .desktop-description-container {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    font-style: normal;
+    line-height: 32px;
+    color: #b3bac5;
+    margin-top: 50px;
+    width: 29em;
+  }
+
+  /* Technical skills */
+
+  .desktop-skills-container {
+    margin-top: 2em;
+    width: 35em;
+    margin-inline: auto;
+  }
+
+  .technical-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 2.2em;
+  }
+
+  .desktop-skills-container .technical-skills {
+    display: flex;
+    justify-content: center;
+    width: 35em;
+  }
+
+  .desktop-skills-container .hr-image-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desktop-skills-container .img-container2 {
+    margin-top: 30px;
+  }
+
+  .ts-section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .ts-section .ts-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: #9390ff;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: left;
+    margin-left: 1em;
+  }
+
+  .ts-section .ts-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 13.14px;
+    margin-left: -1.5em;
+  }
+
+  .desktop-icons-container {
+    margin: 6em 6em 10em 6em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-icons-container .icons {
+    margin: 0 auto 3em auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #work-arrow1 {
+    display: flex;
+  }
+
+  #work-arrow1 a {
+    color: var(--color-neutral-6);
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    gap: 10px;
   }
 }
