@@ -424,6 +424,11 @@ footer .footer-email {
   line-height: 28px;
 }
 
+footer .footer-email a {
+  text-decoration: none;
+  color: #ebebff;
+}
+
 /* ------------------------------------------
   Media Queries
 -------------------------------------------- */
@@ -752,5 +757,73 @@ footer .footer-email {
   .project-rest .project-details-btn {
     position: relative;
     bottom: 0;
+  }
+
+  /* Contact form */
+
+  .contact-us {
+    margin-top: 150px;
+  }
+
+  .contact-us .section-title {
+    font-size: 40px;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: #9390ff;
+  }
+
+  .contact-us .contact-form-intro {
+    width: 35em;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #b3bac5;
+  }
+
+  .contact-us .form-container {
+    margin-top: 50px;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 684px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 15px 16px;
+  }
+
+  #contact-form input {
+    height: 48px;
+  }
+
+  #contact-form textarea {
+    height: 136px;
+  }
+
+  #contact-form button {
+    width: 160px;
+    height: 48px;
+    padding: 12px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 30px;
+    padding: 20px;
+  }
+
+  footer .footer-icons {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }

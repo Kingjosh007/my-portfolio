@@ -270,23 +270,25 @@
         </section>
 
         <section class="contact-us">
-            <h2 class="section-title">CONTACT US</h2>
+            <h2 class="section-title show-on-mobile hide-on-desktop">CONTACT US</h2>
+            <h2 class="section-title hide-on-mobile show-on-desktop">Let's chat!</h2>
             <p class="contact-form-intro">
                 If you have an application you are interested in developing, a feature that you need built or a project
                 that needs coding. I’d love to help with it
             </p>
             <div class="form-container">
                 <form action="https://formspree.io/f/xqkwgbye" method="post" id="contact-form">
-                    <input name="name" type="text" placeholder="Your name" maxlength="30" required>
+                    <input name="name" type="text" placeholder="Your full name" maxlength="30" required>
                     <input name="email" type="email" placeholder="Your email address" required>
-                    <textarea name="message" placeholder="Your message" maxlength="500" required></textarea>
-                    <button type="submit">Get In Touch</button>
+                    <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </section>
     </main>
     <div class="hr-image-container" id="main-footer-hr">
-        <img src="assets/svg/hr.svg" alt="Line separing the main section from the footer">
+        <img src="assets/svg/hr.svg" alt="Line separing the main section from the footer" class="show-on-mobile hide-on-desktop">
+        <img src="assets/svg/desktop/hr-biggest-desktop.svg" alt="Line separing the main section from the footer" class="show-on-desktop hide-on-mobile">
     </div>
     <footer>
         <div class="footer-icons">
@@ -303,7 +305,7 @@
                     src="assets/png/medium-logo.png" alt="Medium logo leading to my profile"></a>
         </div>
         <div class="footer-email">
-            kingjochewa2007@gmail.com
+           <a href="mailto:kingjochewa2007@gmail.com">kingjochewa2007@gmail.com</a> 
         </div>
     </footer>
 
