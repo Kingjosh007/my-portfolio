@@ -37,7 +37,6 @@ body {
   background-position: left top, right 592px;
 }
 
-
 /* Displaying and hiding */
 
 .hide-on-desktop {
@@ -435,9 +434,10 @@ footer .footer-email {
   body {
     all: unset;
     background-color: var(--color-defaut-background);
-  color: var(--color-primary-4);
-  font-family: 'Roboto', Arial, sans-serif;
+    color: var(--color-primary-4);
+    font-family: 'Roboto', Arial, sans-serif;
   }
+
   /* Desktop background image */
   main {
     background-image:
@@ -667,7 +667,7 @@ footer .footer-email {
   .recent-work {
     background-image:
       url("assets/svg/desktop/ellipse-technologies-top-left.svg"),
-      url("assets/svg/desktop/ellipse-technologies-middle-right.svg"), 
+      url("assets/svg/desktop/ellipse-technologies-middle-right.svg"),
       url("assets/svg/desktop/ellipse-technologies-middle-left.svg"),
       url("assets/svg/desktop/ellipse-technologies-bottom-right.svg");
     background-repeat: no-repeat, no-repeat;
@@ -686,7 +686,6 @@ footer .footer-email {
     gap: 80px;
     justify-content: center;
     align-items: center;
-
   }
 
   .projects-container .project:nth-child(odd) {
@@ -754,5 +753,4 @@ footer .footer-email {
     position: relative;
     bottom: 0;
   }
-  
 }
