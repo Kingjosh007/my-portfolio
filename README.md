@@ -24,6 +24,10 @@ This project was divided into 10 parts before getting to the full portfolio webs
 
 💻 **Desktop version**
 
+![screenshot1](./screenshots/desktop/screenshot1.PNG) ![screenshot2](./screenshots/desktop/screenshot2.PNG) 
+![screenshot3](./screenshots/desktop/screenshot3.PNG) ![screenshot4](./screenshots/desktop/screenshot4.PNG) 
+![screenshot5](./screenshots/desktop/screenshot5.PNG) ![screenshot6](./screenshots/desktop/screenshot6.PNG) 
+
 
 
 📱 **Mobile version** 

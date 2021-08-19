@@ -815,7 +815,7 @@ footer .footer-email a {
   footer {
     display: flex;
     flex-direction: row;
-    justify-content: center; 
+    justify-content: center;
     gap: 30px;
     padding: 20px;
   }
