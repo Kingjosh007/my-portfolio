@@ -29,15 +29,31 @@ body {
   background-color: var(--color-defaut-background);
   color: var(--color-primary-4);
   font-family: 'Roboto', Arial, sans-serif;
-}
-
-main {
   background-image:
     url("assets/svg/big_ellipse.svg"),
     url("assets/svg/small_ellipse.svg");
   background-repeat: no-repeat, no-repeat;
   background-attachment: scroll, scroll;
-  background-position: left top, right bottom;
+  background-position: left top, right 592px;
+}
+
+
+/* Displaying and hiding */
+
+.hide-on-desktop {
+  display: block;
+}
+
+.show-on-mobile {
+  display: block;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+.show-on-desktop {
+  display: none;
 }
 
 /* Hamburger Icon */
@@ -85,10 +101,6 @@ main {
   margin-left: 24px;
 }
 
-.portfolio-header .desktop-nav {
-  display: none;
-}
-
 .portfolio-header .logo {
   text-decoration: none;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -121,10 +133,6 @@ main {
   font-weight: 700;
   text-align: center;
   color: var(--color-primary-2);
-}
-
-.main-section .desktop-name {
-  display: none;
 }
 
 .main-section .job-title {
@@ -283,7 +291,7 @@ ul li {
   gap: 10px;
 }
 
-.project .projectDetailsBtn {
+.project .project-details-btn {
   border: none;
   width: 89px;
   height: 48px;
@@ -295,22 +303,24 @@ ul li {
   cursor: pointer;
 }
 
-.projectDetailsBtn:hover {
+.project-details-btn:hover {
   background-color: var(--color-primary-2);
   color: var(--color-neutral-11);
 }
 
-.projectDetailsBtn:active {
+.project-details-btn:active {
   background-color: var(--color-primary-1);
 }
 
-.projectDetailsBtn:focus {
+.project-details-btn:focus {
   background-color: var(--color-primary-1);
 }
 
-.projectDetailsBtn:disabled {
+.project-details-btn:disabled {
   background-color: var(--color-neutral-2);
 }
+
+/* Contact Form */
 
 .contact-us {
   display: flex;
@@ -419,9 +429,15 @@ footer .footer-email {
   Media Queries
 -------------------------------------------- */
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   /* desktops, large screens */
 
+  body {
+    all: unset;
+    background-color: var(--color-defaut-background);
+  color: var(--color-primary-4);
+  font-family: 'Roboto', Arial, sans-serif;
+  }
   /* Desktop background image */
   main {
     background-image:
@@ -430,6 +446,22 @@ footer .footer-email {
     background-repeat: no-repeat, no-repeat;
     background-attachment: scroll, scroll;
     background-position: 24px 50px, 100% 300px;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: none;
+  }
+
+  .hide-on-mobile {
+    display: block;
+  }
+
+  .show-on-desktop {
+    display: block;
   }
 
   /* Desktop header */
@@ -589,12 +621,13 @@ footer .footer-email {
     justify-content: flex-start;
     align-items: flex-start;
     color: #fff;
-    font-size: 13.14px;
+    font-size: 15px;
+    line-height: 25.48px;
     margin-left: -1.5em;
   }
 
   .desktop-icons-container {
-    margin: 6em 6em 10em 6em;
+    margin: 6em 6em 5em 6em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -620,4 +653,106 @@ footer .footer-email {
     text-decoration: none;
     gap: 10px;
   }
+
+  #desktop-portfolio-title {
+    align-self: flex-start;
+    margin-left: 1em;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 114px;
+  }
+
+  /* Projects */
+
+  .recent-work {
+    background-image:
+      url("assets/svg/desktop/ellipse-technologies-top-left.svg"),
+      url("assets/svg/desktop/ellipse-technologies-middle-right.svg"), 
+      url("assets/svg/desktop/ellipse-technologies-middle-left.svg"),
+      url("assets/svg/desktop/ellipse-technologies-bottom-right.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, scroll;
+    background-position: 24px 195px, 100% 800px, 10px 1400px, 100% 1600px;
+    padding-left: 2em;
+    margin-left: -2em;
+    padding-right: -2em;
+    margin-right: -2em;
+  }
+
+  .projects-container {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .projects-container .project:nth-child(odd) {
+    display: grid;
+    margin-inline: 142px;
+    justify-items: center;
+    text-align: left;
+    grid-template-columns: 1fr 24px 1fr;
+    grid-template-areas:
+      "photo . rest"
+      "photo . rest"
+      "photo . rest"
+      "photo . rest";
+  }
+
+  .projects-container .project:nth-child(even) {
+    display: grid;
+    justify-items: center;
+    margin-inline: 142px;
+    padding-left: 40px;
+    grid-template-columns: 1fr 24px 1.5fr;
+    grid-template-areas:
+      "rest . photo"
+      "rest . photo"
+      "rest . photo"
+      "rest . photo";
+  }
+
+  .project .screenshot-container {
+    grid-area: photo;
+    width: 500px;
+    min-height: 327px;
+  }
+
+  .project .project-rest {
+    grid-area: rest;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 0.5em;
+    height: 100%;
+  }
+
+  .project-rest .project-description {
+    font-size: 20px;
+    line-height: 28px;
+    font-family: "Inter", sans-serif;
+    margin-top: 0.5em;
+    font-weight: 200;
+    text-align: left;
+  }
+
+  .project-rest .technologies-used {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Inter", sans-serif;
+    margin-left: -2em;
+    margin-top: -2px;
+    font-weight: 200;
+    gap: 10px;
+  }
+
+  .project-rest .project-details-btn {
+    position: relative;
+    bottom: 0;
+  }
+  
 }

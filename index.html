@@ -25,7 +25,7 @@
 
     <header class="portfolio-header">
         <a href="#" class="logo">KJC</a>
-        <nav class="desktop-nav">
+        <nav class="desktop-nav hide-on-mobile show-on-desktop">
             <ul>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><li><a href="#about">About</a></li></li>
@@ -36,15 +36,15 @@
                 </div></li>
             </ul>
         </nav>
-        <div class="hamburger-menu">
+        <div class="hamburger-menu hide-on-desktop show-on-mobile">
             <div class="hamburger-icon"><span></span></div>
         </div>
     </header>
     <main>
         <section class="main-section" id="about-me">
             <div class="desktop-name-container">
-            <h1 class="name">King J. Chewa</h1>
-            <h2 class="desktop-name">King Josaphat Chewa</h2>
+            <h1 class="name hide-on-desktop show-on-mobile">King J. Chewa</h1>
+            <h2 class="desktop-name hide-on-mobile show-on-desktop">King Josaphat Chewa</h2>
             <h3 class="job-title">Software Developer</h3>
             </div>
 
@@ -144,9 +144,12 @@
         </div>
 
         <section class="recent-work" id="portfolio">
-            <h2 class="section-title">MY RECENT WORK</h2>
+            <h2 class="section-title hide-on-desktop show-on-mobile" id="portfolio-title">MY RECENT WORK</h2>
+            <h2 class="section-title show-on-desktop hide-on-mobile" id="desktop-portfolio-title">My recent work</h2>
             <div class="hr-image-container">
-                <img src="assets/svg/hr.svg"
+                <img src="assets/svg/hr.svg" class="hide-on-desktop" id="hr-img"
+                    alt="Line separing the recent work title from the actual list of recent projects">
+                <img src="assets/svg/desktop/hr-big-desktop.svg" class="show-on-desktop" id="desktop-hr-img"
                     alt="Line separing the recent work title from the actual list of recent projects">
             </div>
 
@@ -155,6 +158,7 @@
                     <div class="screenshot-container">
                         <img src="images/FootAIz.PNG" alt="Screenshot of the project named FootAIz" class="screenshot">
                     </div>
+                    <div class="project-rest">
                     <h3 class="project-title">FootAIz</h3>
                     <div class="project-description">
                         <p>A software that makes football predictions based on artificial intelligence. Based on past
@@ -173,7 +177,8 @@
                                 alt="Line separing the technologies used in a project"></li>
                         <li class="technology">Adaboost</li>
                     </ul>
-                    <button class="projectDetailsBtn">See Project</button>
+                    <button class="project-details-btn">See Project</button>
+                    </div>
                 </div>
 
                 <div class="project">
@@ -181,13 +186,14 @@
                         <img src="images/scrabblecoach.PNG" alt="Screenshot of the project named ScrabbleCoach"
                             class="screenshot">
                     </div>
+
+                    <div class="project-rest">
                     <h3 class="project-title">ScrabbleCoach</h3>
                     <div class="project-description">
                         <p>An desktop application that helps scrabble players learning the words used in the french
                             scrabble game (more than 400,000 words) from 2 to 15 letters long.</p>
                     </div>
-                    <div class="technologies-used">
-                        <ul class="technologies-used">
+                    <ul class="technologies-used">
                             <li class="technology">electron.js</li>
                             <li class="separator"><img src="assets/svg/vertical_line.svg"
                                     alt="Line separing the technologies used in a project"></li>
@@ -198,9 +204,10 @@
                             <li class="separator"><img src="assets/svg/vertical_line.svg"
                                     alt="Line separing the technologies used in a project"></li>
                             <li class="technology">css</li>
-                        </ul>
-                    </div>
-                    <button class="projectDetailsBtn">See Project</button>
+                    </ul>
+             
+                    <button class="project-details-btn">See Project</button>
+                </div>
                 </div>
 
                 <div class="project">
@@ -208,6 +215,7 @@
                         <img src="assets/png/project_screenshot_placeholder.png" alt="Screenshot of the project"
                             class="screenshot">
                     </div>
+                    <div class="project-rest">
                     <h3 class="project-title">Multi-Post Stories</h3>
                     <div class="project-description">
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been
@@ -227,7 +235,8 @@
                                 alt="Line separing the technologies used in a project"></li>
                         <li class="technology">Ruby</li>
                     </ul>
-                    <button class="projectDetailsBtn">See Project</button>
+                    <button class="project-details-btn">See Project</button>
+                </div>
                 </div>
 
                 <div class="project">
@@ -235,6 +244,7 @@
                         <img src="assets/png/project_screenshot_placeholder.png" alt="Screenshot of the project"
                             class="screenshot">
                     </div>
+                    <div class="project-rest">
                     <h3 class="project-title">Multi-Post Stories</h3>
                     <div class="project-description">
                         <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been
@@ -254,7 +264,8 @@
                                 alt="Line separing the technologies used in a project"></li>
                         <li class="technology">Ruby</li>
                     </ul>
-                    <button class="projectDetailsBtn">See Project</button>
+                    <button class="project-details-btn">See Project</button>
+                </div>
                 </div>
             </div>
         </section>
