@@ -2,7 +2,7 @@
 
 # My portfolio
 
-> This project was the second in my Microverse journey that needed a code review. I had to work on what would be my personal portfolio. The goal was to be able to parse a Figma design to create a beautiful UI using Flexbox, Grid CSS, images and backgrounds, while sticking to the best practices (Linter, Github Flow, Professional commits and documentation etc.)
+> This project was part of my Microverse journey. I had to work on what would be my personal portfolio. The goal was to be able to parse a Figma design to create a beautiful UI using Flexbox, Grid CSS, images and backgrounds, while sticking to the best practices (Linter, Github Flow, Professional commits and documentation etc.)
 
 > I was supposed to build a UI that is as close as possible to this Figma design: [Figma Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10) 
 
@@ -72,6 +72,7 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - [@Kingstalux](https://github.com/Kingstalux), which whom I created the contact form through pair-programming
+- A huge thanks to [@Tchilo](https://github.com/Tchilo) and [@benshidanny11](https://github.com/benshidanny11), from my morning session team, for reviewing the code of the desktop version
 
 ## 📝 License
 
