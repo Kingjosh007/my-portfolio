@@ -2,16 +2,16 @@
 
 # My portfolio
 
-> This project was the second in my Microverse journey that needed a code review. I had to work on what would be my personal portfolio. The goal was to be able to parse a Figma design to create a beautiful UI using Flexbox, Grid CSS, images and backgrounds, while sticking to the best practices (Linter, Github Flow, Professional commits and documentation etc.)
+> This project was part of my Microverse journey. I had to work on what would be my personal portfolio. The goal was to be able to parse a Figma design to create a beautiful UI using Flexbox, Grid CSS, images and backgrounds, while sticking to the best practices (Linter, Github Flow, Professional commits and documentation etc.)
 
 > I was supposed to build a UI that is as close as possible to this Figma design: [Figma Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10) 
 
-This project was divided into 10 parts before getting to the full portfolio website. Each part corresponds to a specific branch. The 10 parts are listed below. The one in bold is the one I am currently working on. Refer to the corresponding branch.
+This project was divided into 10 parts before getting to the full portfolio website. Each part corresponds to a specific branch. The 10 parts are listed below. The text in **bold** refers to the part I am currently working on. Refer to the corresponding branch.
 
 1. Setup and mobile version skeleton
 2. List of previous projects + About myself (mobile)
-**3. Add a contact form + finish the mobile version**
-4. Create the desktop version using media queries
+3. Add a contact form + finish the mobile version
+4. **Create the desktop version using media queries**
 5. Deploy on Github Pages
 6. Changes regarding accessibility
 7. Mobile menu using JavaScript
@@ -22,10 +22,21 @@ This project was divided into 10 parts before getting to the full portfolio webs
 
 ## Screenshots
 
+💻 **Desktop version**
+
+![screenshot1](./screenshots/desktop/screenshot1.PNG) ![screenshot2](./screenshots/desktop/screenshot2.PNG) 
+![screenshot3](./screenshots/desktop/screenshot3.PNG) ![screenshot4](./screenshots/desktop/screenshot4.PNG) 
+![screenshot5](./screenshots/desktop/screenshot5.PNG) ![screenshot6](./screenshots/desktop/screenshot6.PNG) 
+
+
+
+📱 **Mobile version** 
+
 ![screenshot1](./screenshots/screenshot1.PNG) ![screenshot2](./screenshots/screenshot2.PNG) 
 ![screenshot3](./screenshots/screenshot3.PNG) ![screenshot4](./screenshots/screenshot4.PNG) 
 ![screenshot5](./screenshots/screenshot5.PNG) ![screenshot6](./screenshots/screenshot6.PNG) 
 ![screenshot7](./screenshots/screenshot7.PNG) ![screenshot8](./screenshots/screenshot8.PNG) 
+
 
 
 ## Built With
@@ -61,6 +72,7 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - [@Kingstalux](https://github.com/Kingstalux), which whom I created the contact form through pair-programming
+- A huge thanks to [@Tchilo](https://github.com/Tchilo) and [@benshidanny11](https://github.com/benshidanny11), from my morning session team, for reviewing the code of the desktop version
 
 ## 📝 License
 
