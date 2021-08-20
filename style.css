@@ -107,6 +107,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: var(--color-neutral-11);
+  animation: rotate 6s;
 }
 
 .portfolio-header a {
@@ -866,11 +867,8 @@ footer .footer-email a {
   transform: translate(25px);
 }
 
-.logo {
-  animation: rotate 6s; 
-}
-
 @keyframes rotate {
   to {
     transform: rotateZ(-3240deg);
   }
+}
