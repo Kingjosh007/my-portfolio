@@ -860,3 +860,17 @@ footer .footer-email a {
 .screenshot:hover {
   transform: scale(1.2);
 }
+
+/* Form intro transition */
+.contact-form-intro:hover {
+  transform: translate(25px);
+}
+
+.logo {
+  animation: rotate 6s; 
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateZ(-3240deg);
+  }
