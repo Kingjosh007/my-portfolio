@@ -827,3 +827,30 @@ footer .footer-email a {
     gap: 20px;
   }
 }
+
+/* ------------------------------------------
+  Animations & Transitions
+-------------------------------------------- */
+
+/* Buttons */
+
+.project-details-btn:hover,
+.contact-form-btn:hover {
+  animation-duration: 1.5s;
+  animation-name: bgcolor_animation;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bgcolor_animation {
+  0% {
+    background-color: var(--color-primary-4);
+  }
+
+  50% {
+    background-color: var(--color-primary-2);
+  }
+
+  100% {
+    background-color: var(--color-primary-1);
+  }
+}
