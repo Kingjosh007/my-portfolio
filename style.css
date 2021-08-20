@@ -107,6 +107,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: var(--color-neutral-11);
+  animation: rotate 6s;
 }
 
 .portfolio-header a {
@@ -825,5 +826,49 @@ footer .footer-email a {
     display: flex;
     justify-content: center;
     gap: 20px;
+  }
+}
+
+/* ------------------------------------------
+  Animations & Transitions
+-------------------------------------------- */
+
+/* Buttons */
+
+.project-details-btn:hover,
+.contact-form-btn:hover {
+  transform: scale(1.2);
+  animation-duration: 2s;
+  animation-name: bgcolor_animation;
+  animation-timing-function: ease-in;
+}
+
+@keyframes bgcolor_animation {
+  0% {
+    background-color: var(--color-primary-4);
+  }
+
+  50% {
+    background-color: var(--color-primary-2);
+  }
+
+  100% {
+    background-color: var(--color-primary-1);
+  }
+}
+
+/* Screenshot scale */
+.screenshot:hover {
+  transform: scale(1.2);
+}
+
+/* Form intro transition */
+.contact-form-intro:hover {
+  transform: translate(25px);
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateZ(-3240deg);
   }
 }
