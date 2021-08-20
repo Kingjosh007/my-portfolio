@@ -836,7 +836,8 @@ footer .footer-email a {
 
 .project-details-btn:hover,
 .contact-form-btn:hover {
-  animation-duration: 1.5s;
+  transform: scale(1.2);
+  animation-duration: 2s;
   animation-name: bgcolor_animation;
   animation-timing-function: ease-in;
 }
@@ -853,4 +854,9 @@ footer .footer-email a {
   100% {
     background-color: var(--color-primary-1);
   }
+}
+
+/* Screenshot scale */
+.screenshot:hover {
+  transform: scale(1.2);
 }
