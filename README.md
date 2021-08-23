@@ -20,6 +20,11 @@ This project was divided into 10 parts before getting to the full portfolio webs
 10. Use local storage to save form data
 
 
+## Live Demo
+
+Here is the link to the live version of this project: [See it live](https://kingjosh007.github.io/my-portfolio) 
+
+
 ## Screenshots
 
 💻 **Desktop version**
@@ -43,10 +48,6 @@ This project was divided into 10 parts before getting to the full portfolio webs
 
 - HTML, CSS (with a focus on Flexbox, Grid and images and background manipulation)
 - Github Flow, Linter
-
-## Live Demo
-
-There is no live demo available yet for this project. I provided several screenshots instead.
 
 
 ## Author
