@@ -651,12 +651,15 @@ footer .footer-email a {
     display: flex;
   }
 
-  #work-arrow1 a {
+  .work-arrow a {
+    text-decoration: none;
     color: var(--color-neutral-6);
     font-size: 20px;
+  }
+
+  #work-arrow1 a {
     display: flex;
     align-items: flex-end;
-    text-decoration: none;
     gap: 10px;
   }
 
