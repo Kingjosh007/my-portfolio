@@ -12,8 +12,8 @@ This project was divided into 10 parts before getting to the full portfolio webs
 2. List of previous projects + About myself (mobile)
 3. Add a contact form + finish the mobile version
 4. Create the desktop version using media queries
-5. **Deploy on Github Pages**
-6. Changes regarding accessibility
+5. Deploy on Github Pages
+6. **Changes regarding accessibility**
 7. Mobile menu using JavaScript
 8. Popup window that includes the project details 
 9. Client-side validation in the contact form
