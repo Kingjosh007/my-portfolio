@@ -107,7 +107,7 @@ body {
   font-size: 18px;
   line-height: 20px;
   color: var(--color-neutral-11);
-  animation: rotate 6s;
+  animation: rotate 4s;
 }
 
 .portfolio-header a {

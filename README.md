@@ -29,19 +29,15 @@ Here is the link to the live version of this project: [See it live](https://king
 
 💻 **Desktop version**
 
-![screenshot1](./screenshots/desktop/screenshot1.PNG) ![screenshot2](./screenshots/desktop/screenshot2.PNG) 
-![screenshot3](./screenshots/desktop/screenshot3.PNG) ![screenshot4](./screenshots/desktop/screenshot4.PNG) 
-![screenshot5](./screenshots/desktop/screenshot5.PNG) ![screenshot6](./screenshots/desktop/screenshot6.PNG) 
+This gif image gives a preview of the desktop version
+![desktop version](./screenshots/desktop_version.gif)
 
 
 
 📱 **Mobile version** 
 
-![screenshot1](./screenshots/screenshot1.PNG) ![screenshot2](./screenshots/screenshot2.PNG) 
-![screenshot3](./screenshots/screenshot3.PNG) ![screenshot4](./screenshots/screenshot4.PNG) 
-![screenshot5](./screenshots/screenshot5.PNG) ![screenshot6](./screenshots/screenshot6.PNG) 
-![screenshot7](./screenshots/screenshot7.PNG) ![screenshot8](./screenshots/screenshot8.PNG) 
-
+This gif image gives a preview of the mobile version
+![mobile version](./screenshots/mobile_version.gif)
 
 
 ## Built With
