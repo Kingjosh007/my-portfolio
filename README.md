@@ -70,6 +70,7 @@ Give a ⭐️ if you like this project!
 - Microverse
 - [@Kingstalux](https://github.com/Kingstalux), which whom I created the contact form through pair-programming
 - A huge thanks to [@Tchilo](https://github.com/Tchilo) and [@benshidanny11](https://github.com/benshidanny11), from my morning session team, for reviewing the code of the desktop version
+- Hat tip to [@Goldinium](https://github.com/Goldinium) with whom I added some nice animations and effets through pair programming.
 
 ## 📝 License
 
