@@ -29,19 +29,15 @@ Here is the link to the live version of this project: [See it live](https://king
 
 💻 **Desktop version**
 
-![screenshot1](./screenshots/desktop/screenshot1.PNG) ![screenshot2](./screenshots/desktop/screenshot2.PNG) 
-![screenshot3](./screenshots/desktop/screenshot3.PNG) ![screenshot4](./screenshots/desktop/screenshot4.PNG) 
-![screenshot5](./screenshots/desktop/screenshot5.PNG) ![screenshot6](./screenshots/desktop/screenshot6.PNG) 
+This gif image gives a preview of the desktop version
+![desktop version](./screenshots/desktop_version.gif)
 
 
 
 📱 **Mobile version** 
 
-![screenshot1](./screenshots/screenshot1.PNG) ![screenshot2](./screenshots/screenshot2.PNG) 
-![screenshot3](./screenshots/screenshot3.PNG) ![screenshot4](./screenshots/screenshot4.PNG) 
-![screenshot5](./screenshots/screenshot5.PNG) ![screenshot6](./screenshots/screenshot6.PNG) 
-![screenshot7](./screenshots/screenshot7.PNG) ![screenshot8](./screenshots/screenshot8.PNG) 
-
+This gif image gives a preview of the mobile version
+![mobile version](./screenshots/mobile_version.gif)
 
 
 ## Built With
@@ -74,6 +70,7 @@ Give a ⭐️ if you like this project!
 - Microverse
 - [@Kingstalux](https://github.com/Kingstalux), which whom I created the contact form through pair-programming
 - A huge thanks to [@Tchilo](https://github.com/Tchilo) and [@benshidanny11](https://github.com/benshidanny11), from my morning session team, for reviewing the code of the desktop version
+- Hat tip to [@Goldinium](https://github.com/Goldinium) with whom I added some nice animations and effets through pair programming.
 
 ## 📝 License
 
