@@ -30,6 +30,7 @@ Here is the link to the live version of this project: [See it live](https://king
 💻 **Desktop version**
 
 This gif image gives a preview of the desktop version
+
 ![desktop version](./screenshots/desktop_version.gif)
 
 
@@ -37,6 +38,7 @@ This gif image gives a preview of the desktop version
 📱 **Mobile version** 
 
 This gif image gives a preview of the mobile version
+
 ![mobile version](./screenshots/mobile_version.gif)
 
 
