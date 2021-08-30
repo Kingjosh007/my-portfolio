@@ -59,34 +59,48 @@ body {
 
 .hamburger-icon {
   margin-right: 2em;
-  height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.3rem;
+  height: 100%;
 }
 
-.hamburger-icon span,
-.hamburger-icon span::before,
-.hamburger-icon span::after {
-  display: block;
-  background: #fff;
-  height: 2.5px;
-  width: 1.8em;
-  border-radius: 2px;
+.hamburger-icon .top-bar,
+.hamburger-icon .middle-bar,
+.hamburger-icon .bottom-bar {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  transition: all 0.3s linear;
   position: relative;
+  transform-origin: 4px;
+  background-color: white;
 }
 
-.hamburger-icon span::before,
-.hamburger-icon span::after {
-  content: "";
-  position: absolute;
+.hamburger-icon .top-bar {
+  transform: rotate(0);
 }
 
-.hamburger-icon span::before {
-  bottom: 9px;
+.hamburger-icon .middle-bar {
+  opacity: 1;
+  transform: translateX(0);
 }
 
-.hamburger-icon span::after {
-  top: 9px;
+.hamburger-icon .bottom-bar {
+  transform: rotate(0);
+}
+
+.hamburger-icon.open .top-bar {
+  transform: rotate(45deg);
+}
+
+.hamburger-icon.open .middle-bar {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.hamburger-icon.open .bottom-bar {
+  transform: rotate(-45deg);
 }
 
 /* Header */
