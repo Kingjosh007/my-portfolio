@@ -185,13 +185,13 @@ footer .footer-email a {
   line-height: 32px;
 }
 
-.link-container {
+.links-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.link-container span {
+.links-container span {
   color: var(--color-primary-2);
   font-size: 30px;
   margin-top: -4px;
