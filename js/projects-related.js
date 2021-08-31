@@ -77,5 +77,17 @@ function renderSingleProject(p) {
   return projectHtml;
 }
 
+
 // Render projects dynamically in the HTML document
 projectsContainer.innerHTML = projects.map((p) => renderSingleProject(p)).join('');
+
+// Click event listener to projects buttons;
+let projectDetailsBtns = document.querySelectorAll('.project-details-btn');
+
+projectDetailsBtns.forEach((pdb) => {
+  pdb.addEventListener('click', (event) => {
+      let projectId = Number(event.target.getAttribute('data-project-id'));
+      let projectToShow = projects.find(p => p.id === projectId);
+
+  })
+});
