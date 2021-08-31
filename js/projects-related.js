@@ -1,5 +1,5 @@
 // Declare projects array
-let projectsContainer = document.querySelector('.projects-container');
+const projectsContainer = document.querySelector('.projects-container');
 
 const projects = [
   {
@@ -78,4 +78,4 @@ function renderSingleProject(p) {
 }
 
 // Render projects dynamically in the HTML document
-projectsContainer.innerHTML = projects.map(p => renderSingleProject(p)).join("");
+projectsContainer.innerHTML = projects.map((p) => renderSingleProject(p)).join('');
