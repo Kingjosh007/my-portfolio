@@ -27,9 +27,13 @@ Here is the link to the live version of this project: [See it live](https://king
 
 ## Screenshots
 
-📱 **Mobile version**&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;💻 **Desktop version** 
+📱 **Mobile version** 
 
-&nbsp; &nbsp; ![mobile version](./screenshots/mobile_version.gif) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![desktop version](./screenshots/desktop_version.gif)
+&nbsp; &nbsp; ![mobile version](./screenshots/mobile_version.gif) &nbsp; &nbsp; ![mobile menu](./screenshots/mobile_menu.gif) 
+
+💻 **Desktop version** 
+
+&nbsp; &nbsp; ![desktop version](./screenshots/desktop_version.gif)
 
 
 ## Built With
