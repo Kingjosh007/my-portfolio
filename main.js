@@ -1,6 +1,8 @@
 const menuBtn = document.querySelector(".hamburger-icon");
 const mobileMenu = document.querySelector(".mobile-menu");
 
+// mobileMenu.style.display = "none";
+
 // Scrolling functions
 function disableScroll() {
   document.body.classList.add("unscrollable");

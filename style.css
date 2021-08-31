@@ -48,12 +48,12 @@ body {
   display: block;
 }
 
-.show-on-mobile {
-  display: block;
-}
-
 .hide-on-mobile {
   display: none;
+}
+
+.show-on-mobile {
+  display: block;
 }
 
 .show-on-desktop {
@@ -195,7 +195,7 @@ body {
   background-color: #191765;
   position: absolute;
   animation-name: mobile-menu-animation-hide;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
 }
 
 .portfolio-header a {
@@ -599,10 +599,6 @@ footer .footer-email {
 
   .show-on-mobile {
     display: none;
-  }
-
-  .hide-on-mobile {
-    display: block;
   }
 
   .show-on-desktop {
