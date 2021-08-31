@@ -13,8 +13,8 @@ This project was divided into 10 parts before getting to the full portfolio webs
 3. Add a contact form + finish the mobile version
 4. Create the desktop version using media queries
 5. Deploy on Github Pages
-6. **Changes regarding accessibility**
-7. Mobile menu using JavaScript
+6. Changes regarding accessibility
+7. **Mobile menu using JavaScript**
 8. Popup window that includes the project details 
 9. Client-side validation in the contact form
 10. Use local storage to save form data
@@ -27,9 +27,13 @@ Here is the link to the live version of this project: [See it live](https://king
 
 ## Screenshots
 
-📱 **Mobile version**&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;💻 **Desktop version** 
+📱 **Mobile version** 
 
-&nbsp; &nbsp; ![mobile version](./screenshots/mobile_version.gif) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![desktop version](./screenshots/desktop_version.gif)
+&nbsp; &nbsp; ![mobile version](./screenshots/mobile_version.gif) &nbsp; &nbsp; ![mobile menu](./screenshots/mobile_menu.gif) 
+
+💻 **Desktop version** 
+
+&nbsp; &nbsp; ![desktop version](./screenshots/desktop_version.gif)
 
 
 ## Built With
