@@ -60,10 +60,36 @@ body {
   display: none;
 }
 
+/* Header */
+
+.portfolio-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  padding-inline: 20px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 34px;
+  background-color: var(--color-defaut-background);
+}
+
+.portfolio-header .logo {
+  text-decoration: none;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--color-neutral-11);
+  animation: rotate 4s;
+}
+
 /* Hamburger Icon */
 
 .hamburger-icon {
-  margin-right: 2em;
   display: flex;
   position: static;
   flex-direction: column;
@@ -78,7 +104,7 @@ body {
   width: 2rem;
   height: 0.25rem;
   border-radius: 10px;
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
   position: relative;
   transform-origin: 4px;
   background-color: white;
@@ -99,7 +125,8 @@ body {
 
 .hamburger-icon.open {
   position: fixed;
-  right: 1%;
+  right: 20px;
+  top: 25px;
 }
 
 .hamburger-icon.open .top-bar {
@@ -175,7 +202,7 @@ body {
 
 .mobile-menu.show-on-mobile {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -188,7 +215,7 @@ body {
   padding-inline-start: 2%;
   padding-inline-end: 10%;
   animation-name: mobile-menu-animation-show;
-  animation-duration: 0.16s;
+  animation-duration: 0.2s;
 }
 
 .mobile-menu.hide {
@@ -235,27 +262,6 @@ footer .footer-email a {
   color: var(--color-primary-2);
   font-size: 30px;
   margin-top: -4px;
-}
-
-/* Header */
-
-.portfolio-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 26px;
-  margin-bottom: 60px;
-  margin-left: 24px;
-}
-
-.portfolio-header .logo {
-  text-decoration: none;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
-  color: var(--color-neutral-11);
-  animation: rotate 4s;
 }
 
 /* Main Section */
@@ -611,8 +617,15 @@ footer .footer-email {
   }
 
   .portfolio-header {
+    position: static;
+    top: 0;
     margin-left: 154px;
     margin-right: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 34px;
+    border: none;
   }
 
   .portfolio-header .desktop-nav {
@@ -965,48 +978,48 @@ footer .footer-email {
     justify-content: center;
     gap: 20px;
   }
-}
 
-/* ------------------------------------------
+  /* ------------------------------------------
   Animations & Transitions
 -------------------------------------------- */
 
-/* Buttons */
+  /* Buttons */
 
-.project-details-btn:hover,
-.contact-form-btn:hover {
-  transform: scale(1.2);
-  animation-duration: 2s;
-  animation-name: bgcolor_animation;
-  animation-timing-function: ease-in;
-}
-
-@keyframes bgcolor_animation {
-  0% {
-    background-color: var(--color-primary-4);
+  .project-details-btn:hover,
+  .contact-form-btn:hover {
+    transform: scale(1.2);
+    animation-duration: 2s;
+    animation-name: bgcolor_animation;
+    animation-timing-function: ease-in;
   }
 
-  50% {
-    background-color: var(--color-primary-2);
+  @keyframes bgcolor_animation {
+    0% {
+      background-color: var(--color-primary-4);
+    }
+
+    50% {
+      background-color: var(--color-primary-2);
+    }
+
+    100% {
+      background-color: var(--color-primary-1);
+    }
   }
 
-  100% {
-    background-color: var(--color-primary-1);
+  /* Screenshot scale */
+  .screenshot:hover {
+    transform: scale(1.2);
   }
-}
 
-/* Screenshot scale */
-.screenshot:hover {
-  transform: scale(1.2);
-}
+  /* Form intro transition */
+  .contact-form-intro:hover {
+    transform: translate(25px);
+  }
 
-/* Form intro transition */
-.contact-form-intro:hover {
-  transform: translate(25px);
-}
-
-@keyframes rotate {
-  to {
-    transform: rotateZ(-3240deg);
+  @keyframes rotate {
+    to {
+      transform: rotateZ(-3240deg);
+    }
   }
 }
