@@ -1,4 +1,5 @@
-// Declare projects array 
+// Declare projects array
+let projectsContainer = document.querySelector('.projects-container');
 
 const projects = [
   {
@@ -9,7 +10,7 @@ const projects = [
     description: 'A software that makes football predictions based on artificial intelligence. Based on past data and various models, the software can make pretty accurate predictions in 16 differents football leagues in Europe.',
     technologies: ['node.js', 'brain.js', 'redis', 'Adaboost'],
     liveLink: 'https://google.com',
-    codeLink: 'https://github.com'
+    codeLink: 'https://github.com',
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const projects = [
     description: 'An desktop application that helps scrabble players learning the words used in the french scrabble game (more than 400,000 words) from 2 to 15 letters long.',
     technologies: ['electron.js', 'express.js', 'indexedDB', 'css'],
     liveLink: 'https://google.com',
-    codeLink: 'https://bitbucket.org/tmysteam/scrabblecoach/src/master/'
+    codeLink: 'https://bitbucket.org/tmysteam/scrabblecoach/src/master/',
   },
   {
     id: 3,
@@ -29,7 +30,7 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     liveLink: 'https://google.com',
-    codeLink: 'https://github.com'
+    codeLink: 'https://github.com',
   },
   {
     id: 4,
@@ -39,10 +40,9 @@ const projects = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     technologies: ['css', 'html', 'bootstrap', 'Ruby'],
     liveLink: 'https://google.com',
-    codeLink: 'https://github.com'
+    codeLink: 'https://github.com',
   },
 ];
-
 
 // Render functions
 
@@ -77,4 +77,5 @@ function renderSingleProject(p) {
   return projectHtml;
 }
 
-// 
+// Render projects dynamically in the HTML document
+projectsContainer.innerHTML = projects.map(p => renderSingleProject(p)).join("");
