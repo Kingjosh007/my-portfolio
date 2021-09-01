@@ -1,5 +1,6 @@
 // Declare projects array
 const projectsContainer = document.querySelector('.projects-container');
+const popupProject = document.querySelector('.popup-project');
 
 const projects = [
   {
@@ -88,6 +89,15 @@ projectDetailsBtns.forEach((pdb) => {
   pdb.addEventListener('click', (event) => {
       let projectId = Number(event.target.getAttribute('data-project-id'));
       let projectToShow = projects.find(p => p.id === projectId);
+      popupProject.style.display = "block";
+      popupProject.style.opacity = 1;
 
+      popupProject.querySelector('.popup-title').textContent = projectToShow.title;
+      popupProject.querySelector('.popup-image').src = projectToShow.modalPicture;
+      popupProject.querySelector('.popup-long-description').textContent = projectToShow.description;
+
+      // Popup close
+      let popupClose = document.querySelector('.popup-close');
+      popupClose.addEventListener('click', () => { popupProject.style.opacity = 0; popupProject.style.display="none";});
   })
 });
