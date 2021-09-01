@@ -1,6 +1,7 @@
 // Declare projects array
 const projectsContainer = document.querySelector('.projects-container');
 const popupProject = document.querySelector('.popup-project');
+const overlayDiv = document.querySelector('.overlay');
 
 const projects = [
   {
@@ -110,6 +111,7 @@ projectDetailsBtns.forEach((pdb) => {
     popupProject.querySelector('.live-demo-btn').href = projectToShow.liveLink;
     popupProject.querySelector('.source-code-btn').href = projectToShow.codeLink;
 
+    overlayDiv.style.display = 'block';
     popupProject.style.visibility = 'visible';
     popupProject.style.display = 'block';
     popupProject.style.opacity = 1;
@@ -117,6 +119,11 @@ projectDetailsBtns.forEach((pdb) => {
 
     // Popup close
     const popupClose = document.querySelector('.popup-close');
-    popupClose.addEventListener('click', () => { popupProject.style.opacity = 0; popupProject.style.visibility = 'hidden'; enableScroll(); });
+    popupClose.addEventListener('click', () => {
+      popupProject.style.opacity = 0;
+      popupProject.style.visibility = 'hidden';
+      overlayDiv.style.display = 'none';
+      enableScroll();
+    });
   });
 });
