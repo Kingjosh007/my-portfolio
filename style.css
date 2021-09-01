@@ -586,7 +586,6 @@ footer .footer-email {
   background-color: rgb(55, 55, 104);
   border: 1px solid #fff;
   backdrop-filter: blur(10px);
-  opacity: 1;
   display: flex;
   padding: 12px;
   flex-direction: column;
@@ -595,7 +594,7 @@ footer .footer-email {
   overflow-y: auto;
   transition: opacity 1s ease-in;
   z-index: 99;
-  display: none;
+  visibility: hidden;
   opacity: 0;
 }
 
@@ -640,7 +639,7 @@ footer .footer-email {
   justify-content: center;
 }
 
-.popup-image-container img {
+.popup-image-container .popup-image {
   max-width: 85%;
 }
 
@@ -664,7 +663,7 @@ footer .footer-email {
   gap: 20%;
 }
 
-.popup-btns-container a {
+.popup-btns-container .popup-link {
   background-color: var(--color-primary-2);
   color: white;
   min-width: 200px;
