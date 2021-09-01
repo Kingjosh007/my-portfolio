@@ -694,7 +694,7 @@ footer .footer-email {
 
 .popup-btns-container {
   display: flex;
-    gap: 10%;
+  gap: 10%;
   margin-bottom: 30px;
   margin-left: -6%;
 }
@@ -705,7 +705,7 @@ footer .footer-email {
   justify-content: center;
   gap: 10px;
   background-color: var(--color-primary-2);
-   color: white;
+  color: white;
   min-width: 140px;
   padding: 12px;
   text-align: center;
