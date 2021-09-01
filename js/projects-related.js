@@ -59,6 +59,19 @@ function renderTechnologies(techArr) {
   return technologiesHtml;
 }
 
+function renderTechnologiesForModal(techArr) {
+  let technologiesHtml = "<ul class='technologies-used'>";
+  techArr.forEach((tech, index) => {
+    if (index === 0) {
+      technologiesHtml += "<li class='separator'><img src='assets/svg/vertical_line.svg' alt='Line separing the technologies used in a project'></li>";
+    }
+    technologiesHtml += `<li class='technology'>${tech}</li>`;
+    technologiesHtml += "<li class='separator'><img src='assets/svg/vertical_line.svg' alt='Line separing the technologies used in a project'></li>";
+  });
+  technologiesHtml += '</ul>';
+  return technologiesHtml;
+}
+
 function renderSingleProject(p) {
   const projectHtml = `<div class='project'>
        <div class='screenshot-container'>
@@ -88,15 +101,22 @@ projectDetailsBtns.forEach((pdb) => {
   pdb.addEventListener('click', (event) => {
     const projectId = Number(event.target.getAttribute('data-project-id'));
     const projectToShow = projects.find((p) => p.id === projectId);
-    popupProject.style.display = 'block';
-    popupProject.style.opacity = 1;
 
     popupProject.querySelector('.popup-title').textContent = projectToShow.title;
     popupProject.querySelector('.popup-image').src = projectToShow.modalPicture;
+    popupProject.querySelectorAll('.popup-image').alt = `Image showing a preview of the project named ${projectToShow.title}`;
     popupProject.querySelector('.popup-long-description').textContent = projectToShow.description;
+    popupProject.querySelector('.popup-technologies').innerHTML = renderTechnologiesForModal(projectToShow.technologies);
+    popupProject.querySelector('.live-demo-btn').href = projectToShow.liveLink;
+    popupProject.querySelector('.source-code-btn').href = projectToShow.codeLink;
+
+    popupProject.style.visibility = 'visible';
+    popupProject.style.display = 'block';
+    popupProject.style.opacity = 1;
+    disableScroll();
 
     // Popup close
     const popupClose = document.querySelector('.popup-close');
-    popupClose.addEventListener('click', () => { popupProject.style.opacity = 0; popupProject.style.display = 'none'; });
+    popupClose.addEventListener('click', () => { popupProject.style.opacity = 0; popupProject.style.visibility = 'hidden'; enableScroll(); });
   });
 });
