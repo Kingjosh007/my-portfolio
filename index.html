@@ -28,14 +28,14 @@
         <nav class="desktop-nav hide-on-mobile show-on-desktop">
             <ul>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about-me">About</a></li>
                 <li><a href="#contact-section">Contact</a></li>
                 <li>
                     <a href="#contact-section">
-                    <div class="envelop">
-                        <div class="arrow-down">
+                        <div class="envelop">
+                            <div class="arrow-down">
+                            </div>
                         </div>
-                    </div>
                     </a>
                 </li>
             </ul>
@@ -49,11 +49,11 @@
         </div>
 
         <nav class="mobile-menu hide-on-desktop hide-on-mobile hide">
-           <ul>
-               <li class="links-container"><a href="#portfolio">Portfolio</a><span>&gt;</span></li>
-               <li class="links-container"><a href="#about">About</a><span>&gt;</span></li>
-               <li class="links-container"><a href="#contact-section">Contact</a><span>&gt;</span></li>
-           </ul> 
+            <ul>
+                <li class="links-container"><a href="#portfolio">Portfolio</a><span>&gt;</span></li>
+                <li class="links-container"><a href="#about-me">About</a><span>&gt;</span></li>
+                <li class="links-container"><a href="#contact-section">Contact</a><span>&gt;</span></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -161,6 +161,32 @@
 
         </div>
 
+        <div class="overlay">
+        </div>
+        <div class="popup-project">
+            <div class="popup-header">
+                <div class="popup-title"></div>
+                <div class="popup-close">&times;</div>
+            </div>
+
+            <div class="popup-main">
+                <div class="popup-image-container">
+                    <img src="#" alt="." class="popup-image">
+                </div>
+                <p class="popup-long-description">
+                </p>
+                <ul class="popup-technologies">
+                </ul>
+                <div class="popup-btns-container">
+                    <a href="#" class="popup-link live-demo-btn" target="_blank" rel="noreferrer noopener"><div>See Live</div><img
+                            src="assets/png/see-live-icon.png"
+                            alt="Icon signaling the link will be open in a new tab"></a>
+                    <a href="#" class="popup-link source-code-btn" target="_blank" rel="noreferrer noopener"><div>See Source</div>
+                        <img src="assets/png/github-logo.png" alt="Github logo"></a>
+                </div>
+            </div>
+        </div>
+
         <section class="recent-work" id="portfolio">
             <h2 class="section-title hide-on-desktop show-on-mobile" id="portfolio-title">MY RECENT WORK</h2>
             <h2 class="section-title show-on-desktop hide-on-mobile" id="desktop-portfolio-title">My recent work</h2>
@@ -172,125 +198,7 @@
             </div>
 
             <div class="projects-container">
-                <div class="project">
-                    <div class="screenshot-container">
-                        <img src="images/FootAIz.PNG" alt="Screenshot of the project named FootAIz" class="screenshot">
-                    </div>
-                    <div class="project-rest">
-                        <h3 class="project-title">FootAIz</h3>
-                        <div class="project-description">
-                            <p>A software that makes football predictions based on artificial intelligence. Based on
-                                past
-                                data and various models, the software can make pretty accurate predictions in 16
-                                differents
-                                football leagues in Europe.</p>
-                        </div>
-                        <ul class="technologies-used">
-                            <li class="technology">node.js</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">brain.js</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">redis</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">Adaboost</li>
-                        </ul>
-                        <button class="project-details-btn" type="button">See Project</button>
-                    </div>
-                </div>
 
-                <div class="project">
-                    <div class="screenshot-container">
-                        <img src="images/scrabblecoach.PNG" alt="Screenshot of the project named ScrabbleCoach"
-                            class="screenshot">
-                    </div>
-
-                    <div class="project-rest">
-                        <h3 class="project-title">ScrabbleCoach</h3>
-                        <div class="project-description">
-                            <p>An desktop application that helps scrabble players learning the words used in the french
-                                scrabble game (more than 400,000 words) from 2 to 15 letters long.</p>
-                        </div>
-                        <ul class="technologies-used">
-                            <li class="technology">electron.js</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">express.js</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">indexedDB</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">css</li>
-                        </ul>
-
-                        <button class="project-details-btn" type="button">See Project</button>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="screenshot-container">
-                        <img src="assets/png/project_screenshot_placeholder.png" alt="Screenshot of the project"
-                            class="screenshot">
-                    </div>
-                    <div class="project-rest">
-                        <h3 class="project-title">Multi-Post Stories</h3>
-                        <div class="project-description">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                                been
-                                the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                                standard
-                                dummy text.</p>
-                        </div>
-                        <ul class="technologies-used">
-                            <li class="technology">css</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">html</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">bootstrap</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">Ruby</li>
-                        </ul>
-                        <button class="project-details-btn" type="button">See Project</button>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="screenshot-container">
-                        <img src="assets/png/project_screenshot_placeholder.png" alt="Screenshot of the project"
-                            class="screenshot">
-                    </div>
-                    <div class="project-rest">
-                        <h3 class="project-title">Multi-Post Stories</h3>
-                        <div class="project-description">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has
-                                been
-                                the
-                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                                standard
-                                dummy text.</p>
-                        </div>
-                        <ul class="technologies-used">
-                            <li class="technology">css</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">html</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">bootstrap</li>
-                            <li class="separator"><img src="assets/svg/vertical_line.svg"
-                                    alt="Line separing the technologies used in a project"></li>
-                            <li class="technology">Ruby</li>
-                        </ul>
-                        <button class="project-details-btn" type="button">See Project</button>
-                    </div>
-                </div>
             </div>
         </section>
 
@@ -336,8 +244,10 @@
         </div>
     </footer>
 
-    <!-- Include Javascript File -->
-    <script src="main.js"></script>
+    <!-- Include Javascript Files -->
+    <script src="js/utilities.js"></script>
+    <script src="js/projects-related.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
