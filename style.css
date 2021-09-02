@@ -1076,7 +1076,8 @@ footer .footer-email {
     margin-top: 50px;
   }
 
-  input:invalid, textarea:invalid {
+  input:invalid,
+ textarea:invalid {
     border: 3px solid red;
   }
 
