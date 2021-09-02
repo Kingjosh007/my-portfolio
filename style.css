@@ -1077,7 +1077,7 @@ footer .footer-email {
   }
 
   input:invalid,
- textarea:invalid {
+  textarea:invalid {
     border: 3px solid red;
   }
 
