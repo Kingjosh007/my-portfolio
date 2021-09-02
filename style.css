@@ -694,7 +694,7 @@ footer .footer-email {
 
 .popup-btns-container {
   display: flex;
-    gap: 10%;
+  gap: 10%;
   margin-bottom: 30px;
   margin-left: -6%;
 }
@@ -705,7 +705,7 @@ footer .footer-email {
   justify-content: center;
   gap: 10px;
   background-color: var(--color-primary-2);
-   color: white;
+  color: white;
   min-width: 140px;
   padding: 12px;
   text-align: center;
@@ -1076,6 +1076,17 @@ footer .footer-email {
     margin-top: 50px;
   }
 
+  input:invalid, textarea:invalid {
+    border: 3px solid red;
+  }
+
+  input:placeholder-shown,
+  input:focus:invalid,
+  textarea:placeholder-shown,
+  textarea:focus:invalid {
+    border: none;
+  }
+
   #contact-form input,
   #contact-form textarea {
     width: 684px;
@@ -1099,6 +1110,24 @@ footer .footer-email {
     padding: 12px;
     margin-top: 50px;
     margin-bottom: 100px;
+  }
+
+  .message-panel {
+    background-color: #f1a0a9;
+    color: red;
+    padding: 3px 15px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    border-radius: 5px;
+    transition: visibility 0.5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+
+  .message-panel:focus {
+    visibility: hidden;
   }
 
   footer {

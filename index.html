@@ -210,10 +210,12 @@
                 that needs coding. I’d love to help with it
             </p>
             <div class="form-container">
-                <form action="https://formspree.io/f/xqkwgbye" method="post" id="contact-form">
+                <form name="contact-form" action="https://formspree.io/f/xqkwgbye" method="post" id="contact-form">
                     <input name="name" type="text" placeholder="Your full name" maxlength="30" required>
                     <input name="email" type="email" placeholder="Your email address" required>
                     <textarea name="message" placeholder="Write your message here" maxlength="500" required></textarea>
+
+                    <div class="message-panel"></div>
                     <button type="submit" class="contact-form-btn">Send</button>
                 </form>
             </div>
