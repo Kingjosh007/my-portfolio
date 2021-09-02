@@ -16,8 +16,8 @@ This project was divided into 10 parts before getting to the full portfolio webs
 6. Changes regarding accessibility
 7. Mobile menu using JavaScript
 8. Popup window that includes the project details
-9. **Client-side validation in the contact form**
-10. Use local storage to save form data
+9. Client-side validation in the contact form
+10. **Use local storage to save form data**
 
 
 ## Live Demo
