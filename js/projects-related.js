@@ -1,4 +1,4 @@
-// Declare projects array
+/* eslint-disable no-undef */
 const projectsContainer = document.querySelector('.projects-container');
 const popupProject = document.querySelector('.popup-project');
 const overlayDiv = document.querySelector('.overlay');

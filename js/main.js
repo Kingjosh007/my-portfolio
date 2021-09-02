@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const menuBtn = document.querySelector('.hamburger-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
 
