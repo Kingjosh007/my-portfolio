@@ -25,9 +25,7 @@ menuBtn.addEventListener('click', () => {
 
 // Handle form submission
 
-function isLowerCase(str) {
-  return /[a-z]/.test(str) && !/[A-Z]/.test(str);
-}
+const isLowerCase = str => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 
 const contactForm = document.forms['contact-form'];
 const emailInput = contactForm.email;
