@@ -29,6 +29,8 @@ const isLowerCase = str => /[a-z]/.test(str) && !/[A-Z]/.test(str);
 
 const contactForm = document.forms['contact-form'];
 const emailInput = contactForm.email;
+const nameInput = contactForm.name;
+const textarea = contactForm.message;
 const messagePanel = document.querySelector('.message-panel');
 const submitButton = document.querySelector('.contact-form-btn');
 
@@ -39,16 +41,31 @@ contactForm.addEventListener('submit', (e) => {
     messagePanel.innerHTML = '<p><b>Error:</b> Your email address should be lowercase.</p>';
     messagePanel.style.visibility = 'visible';
     submitButton.style.marginTop = '30px';
-    // Hide message-panel when inputs have focus.
-    const formElts = document.querySelectorAll('input, textarea');
-    formElts.forEach((fe) => {
-      fe.addEventListener('input', () => {
-        submitButton.style.marginTop = '-15px';
-        messagePanel.style.visibility = 'hidden';
-      });
-    });
   } else {
     messagePanel.style.visibility = 'hidden';
     contactForm.submit();
   }
 });
+
+
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
+
+// LocalStorage persistence 
+
+
+const formElts = document.querySelectorAll('input, textarea');
+  formElts.forEach((fe) => {
+      fe.addEventListener('input', () => {
+        submitButton.style.marginTop = '-15px';
+        messagePanel.style.visibility = 'hidden';
+        // Save object
+        let objectToSave = {
+          name: nameInput.value,
+          email: emailInput.value,
+          message: textarea.value
+        };
+        saveToLocalStorage("formData", objectToSave);
+     });
+});
+
