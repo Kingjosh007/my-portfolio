@@ -32,24 +32,25 @@ function isLowerCase(str) {
 const contactForm = document.forms['contact-form'];
 let emailInput = contactForm.email;
 let messagePanel = document.querySelector('.message-panel');
+const submitButton = document.querySelector('.contact-form-btn');
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   let email = emailInput.value;
-  if(!isLowerCase(email))
+  if (!isLowerCase(email))
   {
     messagePanel.innerHTML = `<p><b>Error:</b> Your email address should be lowercase.</p>`;
     messagePanel.style.visibility = 'visible';
-
+    submitButton.style.marginTop = '30px';
     // Hide message-panel when inputs have focus.
     let formElts = document.querySelectorAll('input, textarea');
     formElts.forEach(fe => {
       fe.addEventListener('input', () => {
+        submitButton.style.marginTop = '-15px';
         messagePanel.style.visibility = 'hidden';
-      })
-    })
-  }
-  else {
+      });
+    });
+  } else {
     messagePanel.style.visibility = 'hidden';
     contactForm.submit();
   }
