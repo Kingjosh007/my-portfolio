@@ -96,7 +96,7 @@ function renderSingleProject(p) {
 projectsContainer.innerHTML = projects.map((p) => renderSingleProject(p)).join('');
 
 // Click event listener to projects buttons;
-const projectDetailsBtns = document.querySelectorAll('.project-details-btn');
+const projectDetailsBtns = document.querySelector('.project-details-btn');
 
 projectDetailsBtns.forEach((pdb) => {
   pdb.addEventListener('click', (event) => {

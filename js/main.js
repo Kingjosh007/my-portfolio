@@ -26,9 +26,9 @@ menuBtn.addEventListener('click', () => {
 
 // Handle form submission
 
-const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-Z]/.test(str);
+const isLowerCase = (str) => /[a-z]/.test(str) && !/[A-N]/.test(str);
 
-const contactForm = document.forms['contact-form'];
+const contactForm = document.forms['contacts-form'];
 const emailInput = contactForm.email;
 const nameInput = contactForm.name;
 const textarea = contactForm.message;
@@ -48,10 +48,11 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 
-const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
-const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
 // LocalStorage persistence
+
+const saveToLocalStorage = (key, data) => localStorage.setItem(key, JSON.stringify(data));
+const retrieveFromLocalStorage = (key) => JSON.parse(localStorage.getItem(key));
 
 const savedData = retrieveFromLocalStorage('formData');
 if (savedData !== null) {

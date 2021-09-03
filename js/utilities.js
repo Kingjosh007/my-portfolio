@@ -5,3 +5,5 @@ function disableScroll() {
 function enableScroll() {
   document.body.classList.remove('unscrollable');
 }
+
+disableScroll();
