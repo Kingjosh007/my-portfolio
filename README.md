@@ -6,7 +6,7 @@
 
 > I was supposed to build a UI that is as close as possible to this Figma design: [Figma Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=23%3A10) 
 
-This project was divided into 10 parts before getting to the full portfolio website. Each part corresponds to a specific branch. The 10 parts are listed below. The text in **bold** refers to the part I am currently working on. Refer to the corresponding branch.
+This project, now completed, was divided into 10 parts before getting to the full portfolio website. Each part corresponds to a specific branch. The 10 parts are listed below. Refer to the corresponding branch.
 
 1. Setup and mobile version skeleton
 2. List of previous projects + About myself (mobile)
@@ -18,6 +18,8 @@ This project was divided into 10 parts before getting to the full portfolio webs
 8. Popup window that includes the project details
 9. Client-side validation in the contact form
 10. **Use local storage to save form data**
+
+> In this special *10-1* branch, I was asked to create some bugs intentionally so that my coding partner ([@Tchilo](https://github.com/Tchilo)) could find them using his browser's developers tools. He would then open an issue where he points out the bugs and suggests possible fixes.
 
 
 ## Live Demo
