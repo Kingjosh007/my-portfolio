@@ -36,10 +36,10 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Summer Music Camp Website',
+    title: 'Summer Music Camp',
     picture: 'images/summer-music-camp.gif',
     modalPicture: 'images/summer-music-camp-modal.gif',
-    description: 'A replica of a design from Behance, though I had to customize it a little, to make it fit to the theme I chose.',
+    description: 'A replica of a design from Behance, though I had to customize it a little, to make it fit the theme I chose.',
     technologies: ['Sass', 'Javascript (ES6)', 'HTML', 'CSS'],
     liveLink: 'https://kingjosh007.github.io/capstone1-summer-music-camp/index.html',
     codeLink: 'https://github.com/Kingjosh007/capstone1-summer-music-camp',
