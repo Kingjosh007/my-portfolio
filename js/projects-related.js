@@ -36,13 +36,13 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Multi-Post Stories',
-    picture: 'assets/png/project_screenshot_placeholder.png',
-    modalPicture: 'assets/png/modal_image.png',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    technologies: ['css', 'html', 'bootstrap', 'Ruby'],
-    liveLink: 'https://google.com',
-    codeLink: 'https://github.com',
+    title: 'Summer Music Camp Website',
+    picture: 'images/summer-music-camp.gif',
+    modalPicture: 'images/summer-music-camp-modal.gif',
+    description: 'A replica of a design from Behance, though I had to customize it a little, to make it fit to the theme I chose.',
+    technologies: ['Sass', 'Javascript (ES6)', 'HTML', 'CSS'],
+    liveLink: 'https://kingjosh007.github.io/capstone1-summer-music-camp/index.html',
+    codeLink: 'https://github.com/Kingjosh007/capstone1-summer-music-camp',
   },
 ];
 
