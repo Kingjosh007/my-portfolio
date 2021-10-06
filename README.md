@@ -17,7 +17,11 @@ This project was divided into 10 parts before getting to the full portfolio webs
 7. Mobile menu using JavaScript
 8. Popup window that includes the project details
 9. Client-side validation in the contact form
-10. **Use local storage to save form data**
+10. Use local storage to save form data
+
+Later I created an 11th branch for every future update on the portfolio
+
+11. **Additional updates**
 
 
 ## Live Demo
